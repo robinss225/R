@@ -892,3 +892,100 @@ footer { background: #100f0c; padding: 64px 40px 48px; }
   footer { padding: 48px 20px 32px; }
   .footer-bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
 }
+
+/* ============================================================
+   BLOG SECTION
+   ============================================================ */
+.blog-section { background: var(--parchment); }
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-bottom: 40px;
+}
+
+.blog-card {
+  background: var(--cream);
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: background var(--transition);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(28,26,23,0.07);
+}
+
+.blog-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 2px;
+  background: var(--gold);
+  transition: width 0.4s ease;
+}
+
+.blog-card:hover { background: var(--white); }
+.blog-card:hover::after { width: 100%; }
+
+.blog-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.blog-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(184,151,90,0.1);
+  padding: 3px 10px;
+  border-radius: 2px;
+}
+
+.blog-date {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--warm-gray);
+}
+
+.blog-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--stone);
+  line-height: 1.2;
+  flex: 1;
+}
+
+.blog-card p {
+  font-size: 0.86rem;
+  color: var(--warm-gray);
+  line-height: 1.8;
+}
+
+.blog-read {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  transition: letter-spacing var(--transition);
+}
+
+.blog-card:hover .blog-read { letter-spacing: 0.18em; }
+
+.blog-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+/* Blog responsive */
+@media (max-width: 960px) {
+  .blog-grid { grid-template-columns: 1fr; }
+}
