@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About — Rabindra Karki</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="about.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet" />
@@ -13,7 +14,7 @@
 
   <!-- NAV -->
   <nav id="navbar" class="always-dark">
-    <a href="index.html" class="nav-logo">RK</a>
+    <a href="index.html" class="nav-logo">RK<span class="logo-dot">.</span></a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html" class="active">About</a></li>
@@ -49,28 +50,59 @@
   </div>
 
   <!-- BIO SECTION -->
-  <section style="background:var(--cream);">
+  <section class="bio-section">
     <div class="section-inner">
-      <div class="bio-layout reveal">
-        <div class="bio-photo">
+      <div class="bio-layout">
+        <div class="bio-photo reveal">
+          <!-- Replace with your actual photo when available -->
           <div class="photo-placeholder">
-            <span class="photo-icon">🧑‍🔬</span>
-            <span>Add your photo</span>
+            <span class="photo-initials">RK</span>
           </div>
+          <!-- Uncomment below and remove placeholder when photo is ready:
+          <img src="images/profile.jpg" alt="Rabindra Karki" class="profile-img" />
+          -->
           <p class="photo-caption">Rabindra Karki · Field Work, Nepal</p>
+          <div class="quick-info">
+            <div class="qi-item">
+              <span class="qi-label">Date of Birth</span>
+              <span class="qi-value">5 February 2003</span>
+            </div>
+            <div class="qi-item">
+              <span class="qi-label">Nationality</span>
+              <span class="qi-value">Nepali</span>
+            </div>
+            <div class="qi-item">
+              <span class="qi-label">Location</span>
+              <span class="qi-value">Kathmandu, Nepal</span>
+            </div>
+            <div class="qi-item">
+              <span class="qi-label">Phone</span>
+              <span class="qi-value">+977 9861602575</span>
+            </div>
+            <div class="qi-item">
+              <span class="qi-label">Email</span>
+              <span class="qi-value">robinss225@gmail.com</span>
+            </div>
+            <a href="cv/Rabindra_Karki_CV.pdf" class="cv-download-btn" download>
+              ↓ Download CV
+            </a>
+          </div>
         </div>
+
         <div class="bio-text">
-          <p class="body-large">I am a geology student at Tribhuvan University driven by a deep curiosity about the forces that have shaped — and continue to shape — the Himalayan landscape.</p>
-          <p class="body-text">Growing up in Nepal means living alongside geology in its most dramatic form: landslides that sever communities, earthquakes that reshape valleys, glaciers that feed rivers. For me, studying geology is not merely an academic pursuit — it is a responsibility to the land and people I come from.</p>
-          <p class="body-text">My work focuses on the intersection of structural geology, applied geophysics, and natural hazard assessment. I believe that rigorous field investigation, combined with modern geophysical tools like Electrical Resistivity Tomography (ERT), provides the most reliable foundation for understanding slope instability, fault behaviour, and subsurface geology in high-mountain terrain.</p>
-          <p class="body-text">Outside of fieldwork and research, I am interested in communicating geological knowledge to communities living in hazard-prone areas, and in developing accessible methodologies that can be applied across Nepal's diverse geological regions — from the Terai plains to the high Himalayan crystallines.</p>
-          <div class="chip-row">
+          <p class="body-large reveal">I am a geology student at Tribhuvan University driven by a deep curiosity about the forces that have shaped — and continue to shape — the Himalayan landscape.</p>
+          <p class="body-text reveal">Growing up in Sindhupalchok, Nepal means living alongside geology in its most dramatic form: landslides that sever communities, earthquakes that reshape valleys, glaciers that feed rivers. For me, studying geology is not merely an academic pursuit — it is a responsibility to the land and people I come from.</p>
+          <p class="body-text reveal">I am currently pursuing a Bachelor's in Science (Geology) at Tri-Chandra Multiple Campus, Tribhuvan University, alongside a completed Bachelor's in Arts (Sociology & Economics) from Koteshwor Multiple Campus. My field experience includes a 15-day geological study in Malekhu and a 28-day study along the Siddhartha Highway covering Butwal, Palpa, and Syangja.</p>
+          <p class="body-text reveal">Beyond academics, I serve as Vice-President of the TU SEG Student Chapter and Vice-President (President-Elect) of Rotaract Club of Kathmandu — roles that have shaped my leadership, communication, and community-service skills as much as my fieldwork has.</p>
+          <div class="chip-row reveal">
             <span class="chip">Himalayan Tectonics</span>
             <span class="chip">Engineering Geology</span>
             <span class="chip">Landslide Hazard</span>
             <span class="chip">Applied Geophysics</span>
             <span class="chip">Climate Resilience</span>
             <span class="chip">GIS &amp; Remote Sensing</span>
+            <span class="chip">Community Service</span>
+            <span class="chip">Leadership</span>
           </div>
         </div>
       </div>
@@ -88,61 +120,253 @@
 
         <div class="timeline-item reveal">
           <div class="timeline-date">
-            2021 — Present
-            <span class="timeline-year">Ongoing</span>
+            Mar 2022 — Present
+            <span class="timeline-badge ongoing">Ongoing</span>
           </div>
           <div class="timeline-content">
-            <h3>Bachelor of Science in Geology</h3>
-            <span class="institution">Tribhuvan University · Kirtipur, Nepal</span>
-            <p>Pursuing a comprehensive geology degree with specialisation in structural geology, geophysics, and natural hazard assessment. Coursework includes petrology, stratigraphy, geomorphology, hydrogeology, and geological mapping techniques. Active participant in annual field camps across Nepal's diverse geological provinces.</p>
+            <h3>Bachelor of Science — Geology</h3>
+            <span class="institution">Tri-Chandra Multiple Campus, Tribhuvan University · Ghantaghar, Kathmandu</span>
+            <p>Pursuing a geology degree with focus on structural geology, geophysics, and natural hazard assessment. Completed a 15-day field study in Malekhu and a 28-day field study along the Siddhartha Highway (Butwal–Palpa–Syangja), covering rock identification, geological mapping, and field data collection.</p>
           </div>
         </div>
 
         <div class="timeline-item reveal">
           <div class="timeline-date">
-            2025 — 2026
-            <span class="timeline-year">Active Project</span>
+            Dec 2019 — Dec 2024
+            <span class="timeline-badge completed">Completed</span>
           </div>
           <div class="timeline-content">
-            <h3>Landslide Investigation — Prithvi Highway</h3>
-            <span class="institution">Independent Research · Prithvi Highway Corridor, Nepal</span>
-            <p>Leading geological and geophysical investigation of landslide-prone zones. Responsibilities include field mapping, structural data collection, ERT survey design and execution, and production of hazard zonation maps for infrastructure planning.</p>
+            <h3>Bachelor of Arts — Sociology &amp; Economics</h3>
+            <span class="institution">Koteshwor Multiple Campus · Jadibuti, Kathmandu</span>
+            <p>Graduated with First Division. Majored in Sociology and Economics, strengthening analytical thinking and understanding of social structures and economic systems.</p>
           </div>
         </div>
 
         <div class="timeline-item reveal">
           <div class="timeline-date">
-            2024
-            <span class="timeline-year">Completed</span>
+            Jul 2017 — Jul 2019
+            <span class="timeline-badge completed">Completed</span>
           </div>
           <div class="timeline-content">
-            <h3>Structural Mapping &amp; Lithological Characterisation</h3>
-            <span class="institution">Field Research · Himalayan Transects, Nepal</span>
-            <p>Systematic structural mapping across selected Himalayan transects. Collected strike-dip measurements, fold axis orientations, fault kinematic indicators, and petrographic samples. Produced detailed geological maps and cross-sections for academic reporting.</p>
+            <h3>Intermediate — Science Stream (+2)</h3>
+            <span class="institution">NASA National College · Tinkune, Kathmandu</span>
+            <p>Completed intermediate education with a science focus, building a strong foundation in analytical reasoning, scientific principles, and problem-solving.</p>
           </div>
         </div>
 
         <div class="timeline-item reveal">
           <div class="timeline-date">
-            2023
-            <span class="timeline-year">Completed</span>
+            Apr 2014 — Apr 2017
+            <span class="timeline-badge completed">Completed</span>
           </div>
           <div class="timeline-content">
-            <h3>Geological Field Camp — Hazard Assessment</h3>
-            <span class="institution">Tribhuvan University · Multi-Region, Nepal</span>
-            <p>Three-week intensive field camp covering geological mapping, natural hazard identification and zonation, cross-section construction, and community-level risk communication. Worked in teams across high-relief terrain in central Nepal.</p>
+            <h3>Secondary Level Education (SEE)</h3>
+            <span class="institution">Krishna Ratna Ganga Secondary School · Chautara, Sindhupalchok</span>
+            <p>Completed Secondary Education Examination with GPA 3.15.</p>
           </div>
         </div>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-date">
-            2019 — 2021
-            <span class="timeline-year">Completed</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFESSIONAL EXPERIENCE -->
+  <section class="bio-section">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">Leadership & Service</span>
+        <h2 class="section-heading">Professional <em>Experience</em></h2>
+      </div>
+      <div class="exp-grid">
+
+        <div class="exp-card reveal">
+          <div class="exp-header">
+            <div class="exp-icon">🔄</div>
+            <div>
+              <h3>Rotaract Club of Kathmandu</h3>
+              <span class="exp-org">Rotaract International · Kathmandu</span>
+            </div>
           </div>
-          <div class="timeline-content">
-            <h3>Higher Secondary Education (Science)</h3>
-            <span class="institution">Nepal · +2 Science Stream</span>
-            <p>Completed higher secondary education with a focus on Physics, Chemistry, Biology, and Mathematics — building the quantitative and scientific foundation for university-level geology study.</p>
+          <div class="exp-roles">
+            <div class="role-row"><span class="role-title">President-Elect</span><span class="role-date">Jan 2026 – Present</span></div>
+            <div class="role-row"><span class="role-title">Vice-President</span><span class="role-date">Jul 2025 – Present</span></div>
+            <div class="role-row"><span class="role-title">Secretary</span><span class="role-date">Jul 2024 – Jun 2025</span></div>
+            <div class="role-row"><span class="role-title">Treasurer</span><span class="role-date">Jul 2022 – Jun 2024</span></div>
+            <div class="role-row"><span class="role-title">Community Service Director</span><span class="role-date">Jul 2021 – Jun 2022</span></div>
+            <div class="role-row"><span class="role-title">Member</span><span class="role-date">Mar 2020 – Present</span></div>
+          </div>
+          <p class="exp-desc">A major platform for personal and professional growth. Gained experience in leadership, social service, event coordination, and global networking. Awarded Outstanding Club Secretary by Rotaract District 3292 (June 2025).</p>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-header">
+            <div class="exp-icon">🌍</div>
+            <div>
+              <h3>TU SEG Student Chapter</h3>
+              <span class="exp-org">Tribhuvan University · Ghantaghar, Kathmandu</span>
+            </div>
+          </div>
+          <div class="exp-roles">
+            <div class="role-row"><span class="role-title">Vice-President</span><span class="role-date">May 2025 – Present</span></div>
+            <div class="role-row"><span class="role-title">Member</span><span class="role-date">Jan 2024 – Present</span></div>
+          </div>
+          <p class="exp-desc">Actively promoting leadership and collaboration within the geoscience community. Organising academic and field-based activities, workshops, and collaborative projects. Gained hands-on experience in exploration geophysics and scientific leadership.</p>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-header">
+            <div class="exp-icon">🏛</div>
+            <div>
+              <h3>Rotary Club of Kathmandu</h3>
+              <span class="exp-org">Rotary International · Thapathali, Kathmandu</span>
+            </div>
+          </div>
+          <div class="exp-roles">
+            <div class="role-row"><span class="role-title">Secretarial Assistant</span><span class="role-date">Jun 2022 – Present</span></div>
+          </div>
+          <p class="exp-desc">Learning office management, documentation, event planning, and coordination. Developing proficiency in Microsoft Office and professional communication.</p>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-header">
+            <div class="exp-icon">🌐</div>
+            <div>
+              <h3>Rotary District 3292</h3>
+              <span class="exp-org">Rotary International · Thapathali, Kathmandu</span>
+            </div>
+          </div>
+          <div class="exp-roles">
+            <div class="role-row"><span class="role-title">Assistant District Secretary</span><span class="role-date">Jun 2023 – Jun 2024</span></div>
+          </div>
+          <p class="exp-desc">Worked closely with the District Governor, coordinating district-level operations and communications. Expanded professional network and deepened understanding of Rotary's leadership and service structure.</p>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-header">
+            <div class="exp-icon">🔴</div>
+            <div>
+              <h3>Youth Red Cross Circle</h3>
+              <span class="exp-org">Tri-Chandra Campus · Ghantaghar, Kathmandu</span>
+            </div>
+          </div>
+          <div class="exp-roles">
+            <div class="role-row"><span class="role-title">Member</span><span class="role-date">Jan 2024 – Present</span></div>
+          </div>
+          <p class="exp-desc">Contributing to humanitarian initiatives and enhancing teamwork and leadership skills through volunteer activities.</p>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-header">
+            <div class="exp-icon">🌱</div>
+            <div>
+              <h3>International Youth Society Nepal</h3>
+              <span class="exp-org">IYS Nepal · Baneshwor, Kathmandu</span>
+            </div>
+          </div>
+          <div class="exp-roles">
+            <div class="role-row"><span class="role-title">Member</span><span class="role-date">Jul 2019 – Jun 2020</span></div>
+          </div>
+          <p class="exp-desc">Uplifted professional development, management, and leadership skills through youth organisation activities.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKSHOPS & TRAININGS -->
+  <section class="tinted-section">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">Learning &amp; Development</span>
+        <h2 class="section-heading">Workshops &amp; <em>Trainings</em></h2>
+      </div>
+      <div class="workshop-list">
+
+        <div class="workshop-item reveal">
+          <span class="workshop-date">Nov 2024</span>
+          <div class="workshop-body">
+            <h4>International Training Course on Field Geophysical Methods</h4>
+            <span class="workshop-org">Dept. of Geology, Tri-Chandra Campus &amp; University of Southern California (US NSF FRES)</span>
+            <p>In-depth training in ERT, Seismic Refraction Tomography (SRT), Multichannel Analysis of Surface Waves (MASW), and GPS applications.</p>
+          </div>
+        </div>
+
+        <div class="workshop-item reveal">
+          <span class="workshop-date">Mar 2025</span>
+          <div class="workshop-body">
+            <h4>13th Student Himalayan Exercise Tour (SHET-13)</h4>
+            <span class="workshop-org">Gondwana Institute of Environment &amp; Geology, Japan &amp; Tri-Chandra Campus, TU</span>
+            <p>12-day tour focused on Himalayan tectonics, stratigraphy, and rock formations. Strengthened practical field skills and cross-cultural geological learning. <a href="https://www.gondwanainst.org/geotours/2025tour/Traversing%20the%20Himalayan%20Orogen%202025-0504.pdf" target="_blank" class="pub-link">Published report, pg. 61–67 →</a></p>
+          </div>
+        </div>
+
+        <div class="workshop-item reveal">
+          <span class="workshop-date">May 2025</span>
+          <div class="workshop-body">
+            <h4>SEG Field Safety Leadership Course</h4>
+            <span class="workshop-org">Society of Exploration Geophysicists</span>
+            <p>Built competency in field safety protocols, leadership in remote environments, and risk management for geoscience fieldwork.</p>
+          </div>
+        </div>
+
+        <div class="workshop-item reveal">
+          <span class="workshop-date">Aug 2021</span>
+          <div class="workshop-body">
+            <h4>National Youth Conference</h4>
+            <span class="workshop-org">National Youth Council, Nepal</span>
+            <p>Explored youth engagement in sustainable development and contributions to Nepal's development landscape.</p>
+          </div>
+        </div>
+
+        <div class="workshop-item reveal">
+          <span class="workshop-date">Nov–Dec 2021</span>
+          <div class="workshop-body">
+            <h4>Content Writing Workshop</h4>
+            <span class="workshop-org">Knowledge Magazine</span>
+            <p>Enhanced creative and professional writing skills through structured exercises and feedback.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS & PUBLICATIONS -->
+  <section class="bio-section">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-num">Recognition</span>
+        <h2 class="section-heading">Awards &amp; <em>Publications</em></h2>
+      </div>
+      <div class="awards-row">
+
+        <div class="award-card reveal">
+          <div class="award-icon">🏆</div>
+          <div class="award-body">
+            <span class="award-date">June 2025</span>
+            <h4>Outstanding Club Secretary</h4>
+            <span class="award-org">Rotaract District 3292</span>
+            <p>Recognised for outstanding service as Secretary of Rotaract Club of Kathmandu during Rotary Year 2024–25.</p>
+          </div>
+        </div>
+
+        <div class="award-card reveal">
+          <div class="award-icon">📷</div>
+          <div class="award-body">
+            <span class="award-date">September 2021</span>
+            <h4>Rotary Global Photo Contest</h4>
+            <span class="award-org">Rotary International · Environmental Conservation Category</span>
+            <p>Recognition for photography work capturing environmental conservation efforts — highlighting the importance of protecting natural landscapes.</p>
+          </div>
+        </div>
+
+        <div class="award-card reveal">
+          <div class="award-icon">📄</div>
+          <div class="award-body">
+            <span class="award-date">2025</span>
+            <h4>Publication — SHET-13 Report</h4>
+            <span class="award-org">Gondwana Institute for Geology and Environment, Japan · Miscellaneous Publication No. 44</span>
+            <p>Contributed to the published report <em>Traversing the Himalayan Orogen 2025</em>, pages 61–67. <a href="https://www.gondwanainst.org/geotours/2025tour/Traversing%20the%20Himalayan%20Orogen%202025-0504.pdf" target="_blank" class="pub-link">Read publication →</a></p>
           </div>
         </div>
 
@@ -151,7 +375,7 @@
   </section>
 
   <!-- RESEARCH PHILOSOPHY -->
-  <section style="background:var(--cream);">
+  <section class="tinted-section">
     <div class="section-inner">
       <div class="section-header reveal">
         <span class="section-num">Philosophy</span>
@@ -161,24 +385,24 @@
         <div class="value-item reveal">
           <span class="value-num">01</span>
           <h4>Field-First Thinking</h4>
-          <p>Every geological interpretation begins in the field. I believe primary data collected through careful observation and measurement is the most reliable foundation for any research conclusion.</p>
+          <p>Every geological interpretation begins in the field. Primary data collected through careful observation and measurement is the most reliable foundation for any research conclusion.</p>
         </div>
         <div class="value-item reveal">
           <span class="value-num">02</span>
           <h4>Integrated Methods</h4>
-          <p>Combining classical geological mapping with modern geophysical tools — ERT, seismic refraction, remote sensing — produces a more complete picture of subsurface geology than any single method alone.</p>
+          <p>Combining classical geological mapping with modern geophysical tools — ERT, seismic refraction, MASW, remote sensing — produces a more complete picture of subsurface geology than any single method alone.</p>
         </div>
         <div class="value-item reveal">
           <span class="value-num">03</span>
           <h4>Community Relevance</h4>
-          <p>Research that cannot be translated into practical hazard mitigation or community resilience is incomplete. I strive to ensure my findings have real-world application for the people most affected by Nepal's geological hazards.</p>
+          <p>Research that cannot be translated into practical hazard mitigation or community resilience is incomplete. My findings must have real-world application for communities most affected by Nepal's geological hazards.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section class="tinted-section">
+  <section class="bio-section">
     <div class="section-inner">
       <div class="section-header reveal">
         <span class="section-num">Competencies</span>
@@ -200,9 +424,10 @@
           <h4 class="skill-group-title">Geophysics</h4>
           <ul class="skill-list">
             <li>Electrical Resistivity Tomography (ERT)</li>
-            <li>Seismic Refraction</li>
+            <li>Seismic Refraction Tomography (SRT)</li>
+            <li>MASW Analysis</li>
             <li>Ground Penetrating Radar (GPR)</li>
-            <li>Wenner-Schlumberger Array Design</li>
+            <li>GPS Data Processing</li>
             <li>Geophysical Data Interpretation</li>
           </ul>
         </div>
@@ -214,16 +439,18 @@
             <li>GPS Data Collection &amp; Processing</li>
             <li>Google Earth Engine (basic)</li>
             <li>Geological Map Production</li>
+            <li>Microsoft Office Suite</li>
           </ul>
         </div>
         <div class="skill-group reveal">
-          <h4 class="skill-group-title">Academic</h4>
+          <h4 class="skill-group-title">Professional</h4>
           <ul class="skill-list">
             <li>Scientific Report Writing</li>
             <li>Petrographic Analysis</li>
             <li>Literature Review &amp; Synthesis</li>
-            <li>Data Analysis &amp; Interpretation</li>
-            <li>Geological Cross-section Drawing</li>
+            <li>Event Planning &amp; Coordination</li>
+            <li>Team Leadership</li>
+            <li>Photography</li>
           </ul>
         </div>
       </div>
@@ -233,28 +460,21 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <div class="footer-brand">
-        <span class="footer-logo">Rabindra Karki</span>
-        <p class="footer-tagline">Geology Student · Tribhuvan University · Nepal</p>
+      <div class="footer-top">
+        <div class="footer-logo">Rabindra Karki</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="research.html">Research</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
-      <div class="footer-nav">
-        <h5>Pages</h5>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p class="footer-sub">Geology Student · Tribhuvan University · Nepal</p>
+        <p class="footer-copy">© 2026 Rabindra Karki. All rights reserved.</p>
       </div>
-      <div class="footer-contact">
-        <h5>Contact</h5>
-        <p><a href="mailto:robinss225@gmail.com">robinss225@gmail.com</a><br><a href="https://rabindrak.com.np">rabindrak.com.np</a></p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span class="footer-copy">© 2026 Rabindra Karki. All rights reserved.</span>
-      <span class="footer-credit">Geology · Tribhuvan University · Nepal</span>
     </div>
   </footer>
 
