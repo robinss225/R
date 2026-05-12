@@ -62,37 +62,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (revealEls.length > 0) {
     const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+      contactForm.addEventListener('submit', async e => {
         if (!entry.isIntersecting) return;
 
         // Stagger siblings within the same parent
-        const siblings = Array.from(
-          entry.target.parentElement.querySelectorAll('.reveal:not(.visible)')
-        );
-        const idx   = siblings.indexOf(entry.target);
-        const delay = Math.max(0, idx) * 80;
+        submitBtn.textContent = 'Sending…';
+submitBtn.disabled    = true;
+formNote.textContent  = '';
 
-        setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, delay);
+try {
+  const res = await fetch('https://formspree.io/f/xnjwwjwd', {
+    method:  'POST',
+    body:    new FormData(contactForm),
+    headers: { 'Accept': 'application/json' }
+  });
 
-        revealObserver.unobserve(entry.target);
-      });
-    }, {
-      threshold:   0.1,
-      rootMargin: '0px 0px -40px 0px'
-    });
-
-    revealEls.forEach(el => revealObserver.observe(el));
+  if (res.ok) {
+    formNote.textContent = '✓ Message sent! I\'ll get back to you soon.';
+    formNote.style.color = '#b8975a';
+    contactForm.reset();
+    setTimeout(() => { formNote.textContent = ''; }, 6000);
+  } else {
+    formNote.textContent = '✗ Something went wrong. Please email directly.';
+    formNote.style.color = '#e07a5f';
   }
+} catch {
+  formNote.textContent = '✗ Network error. Please try again.';
+  formNote.style.color = '#e07a5f';
+}
 
-  // ── 4. PROJECT FILTER BUTTONS (projects.html) ─────────────
-  const filterBtns   = document.querySelectorAll('.filter-btn');
-  const projectItems = document.querySelectorAll('.project-item');
-
-  if (filterBtns.length > 0) {
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
+submitBtn.textContent = 'Send Message →';
+submitBtn.disabled    = false;
         // Update active button
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
