@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Applied Geophysics — Rabindra Karki</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav id="navbar" class="always-dark">
+    <a href="index.html" class="nav-logo">RK</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="about.html" class="mobile-link">About</a></li>
+      <li><a href="research.html" class="mobile-link active">Research</a></li>
+      <li><a href="projects.html" class="mobile-link">Projects</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span>
+        <a href="research.html">Research</a><span class="sep">/</span>
+        <span class="current">Applied Geophysics</span>
+      </div>
+      <span class="page-hero-tag">Research Interest · 03</span>
+      <h1>Applied <em>Geophysics</em></h1>
+      <p class="page-hero-sub">Non-invasive geophysical methods — particularly ERT — as tools for subsurface characterisation in Nepal's challenging high-mountain terrain.</p>
+    </div>
+  </div>
+
+  <div class="article-page">
+    <div class="article-inner">
+
+      <aside class="article-sidebar reveal">
+        <div class="sidebar-block">
+          <h5>Topic Details</h5>
+          <ul>
+            <li><span>Field</span><span>Applied Geophysics</span></li>
+            <li><span>Primary method</span><span>ERT</span></li>
+            <li><span>Depth range</span><span>5–100 m</span></li>
+            <li><span>Software</span><span>RES2DINV</span></li>
+          </ul>
+        </div>
+        <div class="sidebar-block">
+          <h5>Research Areas</h5>
+          <nav class="sidebar-nav">
+            <a href="research-tectonics.html">Himalayan Tectonics</a>
+            <a href="research-geophysics.html" class="current">Applied Geophysics</a>
+            <a href="research.html">All Research →</a>
+          </nav>
+        </div>
+        <div class="sidebar-block">
+          <h5>Key Terms</h5>
+          <div class="chip-row">
+            <span class="chip">ERT</span>
+            <span class="chip">Resistivity</span>
+            <span class="chip">Inversion</span>
+            <span class="chip">GPR</span>
+            <span class="chip">Seismic</span>
+          </div>
+        </div>
+        <a href="research.html" class="btn-outline">← Back to Research</a>
+      </aside>
+
+      <div class="article-content reveal">
+
+        <p class="lead">What lies beneath the surface controls everything — the stability of slopes, the flow of groundwater, the root zones of landslides, the foundations of structures. Geophysics gives us a way to see it without digging — and in Nepal's remote mountain terrain, that ability is not just convenient, it is often the only practical option.</p>
+
+        <h2>Why Geophysics in Nepal?</h2>
+        <p>Nepal's geological hazard landscape demands subsurface understanding at a scale and frequency that traditional drilling cannot provide. Boreholes are expensive, invasive, and provide point information only. In contrast, a single ERT survey profile can image subsurface conditions continuously along a 200 m traverse at a fraction of the cost — and can be deployed by a small team in terrain that no drilling rig could access.</p>
+        <p>For a country with Nepal's combination of acute geological hazards, limited technical resources, and vast areas of remote high-mountain terrain, non-invasive geophysical methods offer a compelling value proposition: more information, more affordably, in more places.</p>
+
+        <h2>Electrical Resistivity Tomography (ERT)</h2>
+        <p>ERT is my primary geophysical tool. It works by injecting electrical current into the ground between two current electrodes and measuring the resulting potential difference between two other electrodes — a measurement repeated thousands of times across an array of electrodes planted along the survey line. The apparent resistivity values measured are then mathematically inverted to produce a 2D cross-section of true resistivity variation with depth.</p>
+
+        <div class="article-callout">
+          <h5>What Resistivity Tells Us</h5>
+          <p>Electrical resistivity is sensitive to lithology, grain size, porosity, saturation, and pore fluid chemistry. This sensitivity is exactly what makes it valuable for geological investigation — a saturated clayey colluvium (5–30 Ω·m) looks completely different from the dry crystalline bedrock beneath it (>500 Ω·m), allowing the failure surface between them to be mapped with precision.</p>
+        </div>
+
+        <h2>Electrode Arrays &amp; Survey Design</h2>
+        <p>Different electrode configurations (arrays) have different sensitivity patterns and resolution characteristics. For the shallow landslide applications that dominate my work, the Wenner-Schlumberger array offers an excellent compromise between horizontal resolution, depth penetration, and sensitivity to both lateral and vertical resistivity variations:</p>
+
+        <table class="article-table">
+          <thead>
+            <tr>
+              <th>Array Type</th>
+              <th>Depth Penetration</th>
+              <th>Resolution</th>
+              <th>Best Use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Wenner</td><td>Moderate</td><td>Good vertical</td><td>Layered geology</td></tr>
+            <tr><td>Wenner-Schlumberger</td><td>Good</td><td>Good both</td><td>Landslide / general</td></tr>
+            <tr><td>Dipole-Dipole</td><td>Shallow-moderate</td><td>Excellent horizontal</td><td>Lateral structures</td></tr>
+            <tr><td>Pole-Dipole</td><td>Deep</td><td>Moderate</td><td>Deep targets</td></tr>
+          </tbody>
+        </table>
+
+        <h2>Data Processing &amp; Inversion</h2>
+        <p>Raw ERT data requires mathematical inversion to convert the measured apparent resistivity values into a model of true subsurface resistivity. I use RES2DINV (Geotomo Software) — the industry-standard package for 2D ERT inversion — applying a robust least-squares algorithm that minimises the effect of data outliers while producing geologically realistic subsurface models.</p>
+        <p>Quality control involves: removing obvious outlier data points (typically ±3 standard deviations from the mean for each measurement level), checking reciprocal measurements for repeatability, and evaluating the convergence of the inversion (target RMS error <10%). Sensitivity analysis is performed to assess confidence in features at the edges and base of the model section.</p>
+
+        <h2>Integration with Geological Data</h2>
+        <p>ERT results are most powerful when integrated with surface geological observations — lithological logs from road cuts and stream banks, structural measurements, and geotechnical data where available. The resistivity model provides the geometric framework; the geological data provides the physical interpretation. Neither is sufficient alone.</p>
+        <p>In my current Prithvi Highway work, this integration has been particularly productive: ERT profiles acquired across landslide features are interpreted directly in the context of geological cross-sections constructed from field mapping — allowing resistivity zones to be assigned specific lithological identities with high confidence, rather than relying on resistivity ranges alone.</p>
+
+        <h2>Future Directions</h2>
+        <p>I am interested in expanding my geophysical toolkit to include time-lapse ERT — acquiring repeated profiles at the same location over time to monitor seasonal saturation changes — and exploring the potential of ambient seismic noise tomography for regional-scale imaging of Nepal's shallow crustal structure. Both methods offer significant promise for hazard monitoring applications in the Himalayan region.</p>
+
+        <div class="article-nav">
+          <a href="research-tectonics.html" class="article-nav-item">
+            <span class="nav-direction">← Previous</span>
+            <span class="nav-title">Himalayan Tectonics</span>
+          </a>
+          <div class="article-nav-item next">
+            <span class="nav-direction">All Research</span>
+            <a href="research.html" class="nav-title">Back to Research Areas</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Rabindra Karki</span>
+        <p class="footer-tagline">Geology Student · Tribhuvan University · Nepal</p>
+      </div>
+      <div class="footer-nav">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Contact</h5>
+        <p><a href="mailto:robinss225@gmail.com">robinss225@gmail.com</a><br><a href="https://rabindrak.com.np">rabindrak.com.np</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Rabindra Karki. All rights reserved.</span>
+      <span class="footer-credit">Geology · Tribhuvan University · Nepal</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
